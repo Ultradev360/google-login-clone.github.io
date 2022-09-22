@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
+}
+main{
+    max-width:23rem;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 50px 40px 50px;
+    border-radius: 8px;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+h4{
+  font-weight: lighter;
+}
+input{
+    padding: 0px 0px 0px 15px;
+    transition: 0.1s ease;
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid lightgray;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: none; 
+}
+input:focus{
+    border: 2px solid #4285f4;
+}
+input:focus ~ .inputLabel:before{
+    color: #4285f4;
+    font-size: 12px;
+    z-index: 1;
+    top: -65px;
+
+}
+inputLabel{
+    position: relative;
+    width: 200px;
+}
+.inputLabel:before{
+    content: "Email or phone";
+    position: relative;
+    top: -40px;
+    left: -61px;
+    font-size: 18px;
+    z-index: -1;
+    background-color: white;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: 0 5px;
+    transition: 0.1s ease;
+}
+h5{
+    text-align: left;
+    width: 100%;
+    color: #000;
+    margin-bottom: 35px;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+a:hover{
+    color: #366fca;
+    background-color: #f6f9fe;
+}
+button{
+    font-weight: bold;
+    background: #4285f4;
+    color:white;
+    transition: 0.1s ease;
+    padding:4px 8px;
+    border: none;
+}
+button:hover{
+    background-color: #1b66c9;
+    box-shadow: opx 2px 5px rgba(0, 0, 0, 0.2);
+}
+.forgot, span, a{
+    color: #4286f4;
+}
+.guest, .inputLabel:before{
+    color: #5f6368;
+}
